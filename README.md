@@ -1,5 +1,23 @@
 # Freespace FSM-9 IMU ROS Node
 
+## Attribution
+
+This repository is a fork/adaptation of the original `fsm_imu` ROS node by Jordan Ford:
+
+https://github.com/jsford/fsm_imu
+
+The original project provides the ROS node for reading the Hillcrest Labs Freespace FSM-9 IMU through `libfreespace` and publishing `sensor_msgs/Imu` data.
+
+This fork adds ROS Noetic/Ubuntu 20.04 WSL2 setup documentation, `usbipd-win` USB passthrough workflow, HID/USB permission helper scripts, troubleshooting notes, and verified launch instructions for the tested environment.
+
+Original authorship and Git history are preserved.
+
+## License Note
+
+The upstream repository does not currently include an explicit license file, and `package.xml` lists `<license>TODO</license>`. Original source code remains subject to the upstream author's rights. This fork preserves attribution and history and adds documentation/setup scripts for the tested WSL2 environment.
+
+# Freespace FSM-9 ROS Node
+
 Unofficial ROS Noetic node for the Hillcrest Labs Freespace FSM-9 9-axis IMU.
 
 This package reads MotionEngine output from the FSM-9 through the Hillcrest/Freespace `libfreespace` library and publishes standard ROS `sensor_msgs/Imu` messages.
